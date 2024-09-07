@@ -1,0 +1,724 @@
+{
+    "info": {
+      "name": "Mascotas API",
+      "description": "Colección de Postman para la API de manejo de mascotas",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Especies",
+        "item": [
+          {
+            "name": "Get All Especies",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/especies",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "especies"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Get Especie by ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/especies/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "especies",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la especie"
+            },
+            "response": []
+          },
+          {
+            "name": "Create Especie",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Perro\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/especies",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "especies"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Update Especie",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Gato\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/especies/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "especies",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la especie"
+            },
+            "response": []
+          },
+          {
+            "name": "Delete Especie",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/especies/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "especies",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la especie"
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Razas",
+        "item": [
+          {
+            "name": "Get All Razas",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/razas",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "razas"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Get Raza by ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/razas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "razas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la raza"
+            },
+            "response": []
+          },
+          {
+            "name": "Create Raza",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Labrador\",\n    \"idEspecie\": 1\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/razas",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "razas"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Update Raza",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Beagle\",\n    \"idEspecie\": 1\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/razas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "razas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la raza"
+            },
+            "response": []
+          },
+          {
+            "name": "Delete Raza",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/razas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "razas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la raza"
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Mascotas",
+        "item": [
+          {
+            "name": "Get All Mascotas",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/mascotas",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "mascotas"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Get Mascota by ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/mascotas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "mascotas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la mascota"
+            },
+            "response": []
+          },
+          {
+            "name": "Create Mascota",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Rex\",\n    \"idRaza\": 1,\n    \"fechaNacimiento\": \"2023-01-01\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/mascotas",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "mascotas"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Update Mascota",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Rex\",\n    \"idRaza\": 2,\n    \"fechaNacimiento\": \"2023-01-01\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/mascotas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "mascotas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la mascota"
+            },
+            "response": []
+          },
+          {
+            "name": "Delete Mascota",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/mascotas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "mascotas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la mascota"
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Vacunas",
+        "item": [
+          {
+            "name": "Get All Vacunas",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/vacunas",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "vacunas"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Get Vacuna by ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/vacunas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "vacunas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la vacuna"
+            },
+            "response": []
+          },
+          {
+            "name": "Create Vacuna",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Vacuna de Rabia\",\n    \"descripcion\": \"Vacuna contra la rabia\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/vacunas",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "vacunas"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Update Vacuna",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Vacuna de Parvovirus\",\n    \"descripcion\": \"Vacuna contra el parvovirus\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/vacunas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "vacunas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la vacuna"
+            },
+            "response": []
+          },
+          {
+            "name": "Delete Vacuna",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/vacunas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "vacunas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la vacuna"
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Veterinarios",
+        "item": [
+          {
+            "name": "Get All Veterinarios",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/veterinarios",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "veterinarios"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Get Veterinario by ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/veterinarios/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "veterinarios",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID del veterinario"
+            },
+            "response": []
+          },
+          {
+            "name": "Create Veterinario",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Dr. Pérez\",\n    \"telefono\": \"555-1234\",\n    \"email\": \"dr.perez@example.com\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/veterinarios",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "veterinarios"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Update Veterinario",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"nombre\": \"Dr. Gómez\",\n    \"telefono\": \"555-5678\",\n    \"email\": \"dr.gomez@example.com\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/veterinarios/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "veterinarios",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID del veterinario"
+            },
+            "response": []
+          },
+          {
+            "name": "Delete Veterinario",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/veterinarios/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "veterinarios",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID del veterinario"
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Citas",
+        "item": [
+          {
+            "name": "Get All Citas",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/citas",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "citas"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Get Cita by ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/citas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "citas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la cita"
+            },
+            "response": []
+          },
+          {
+            "name": "Create Cita",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"idMascota\": 1,\n    \"idVeterinario\": 1,\n    \"fechaHora\": \"2024-09-01T10:00:00\",\n    \"notas\": \"Chequeo general\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/citas",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "citas"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Update Cita",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"idMascota\": 1,\n    \"idVeterinario\": 1,\n    \"fechaHora\": \"2024-09-02T11:00:00\",\n    \"notas\": \"Chequeo dental\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/citas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "citas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la cita"
+            },
+            "response": []
+          },
+          {
+            "name": "Delete Cita",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/citas/:id",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "citas",
+                  ":id"
+                ]
+              },
+              "description": "Reemplaza :id con el ID de la cita"
+            },
+            "response": []
+          }
+        ]
+      }
+    ]
+  }
+  
